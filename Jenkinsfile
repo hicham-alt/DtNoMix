@@ -3,7 +3,7 @@ agent any
 
 stages{
 
-stage(Build'){
+stage('Build'){
 steps{
 sh '/usr/share/maven/bin/mvn package'
 
