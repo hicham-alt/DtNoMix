@@ -30,7 +30,7 @@ public class SchedulerMain {
     	
     
     public static void main(String[] args) throws InterruptedException {
-        
+        /*
     	System.out.println("passing arguments....");
     	String name_DB = args[0];
     	String period = args[1];
@@ -68,8 +68,8 @@ public class SchedulerMain {
 
         ScheduledExecutorService ses = Executors.newScheduledThreadPool(1);
 
-        Runnable task1 = () -> { Script(pb);};
-
+     //   Runnable task1 = () -> { Script(pb);};
+        Runnable task1 = null;
         // init Delay = 5, repeat the task every 5 seconds
         ScheduledFuture<?> scheduledFuture = ses.scheduleAtFixedRate(task1,0, Integer.valueOf(period), timeUnit);
 
@@ -77,6 +77,6 @@ public class SchedulerMain {
                
            Thread.sleep(3000);
        
-        }   
+        }   */
     }
 }
